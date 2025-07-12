@@ -1,0 +1,5 @@
+<div class="info-left">
+    <h2 class="info-left-h2">Who made "Prism"?</h2>
+    <p>gyhjkeorij</p>
+</center>
+</div>
