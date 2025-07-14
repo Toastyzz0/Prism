@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/accets/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/17/Stats.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prism | Credits</title>
+</head>
+<body>
+<style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  cursor: none;
+  overflow-y: scroll;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171616; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3c545d; 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #38505a; 
+}
+
+
+.banner {
+align-items: center;
+background-position: center;
+height: 450px;
+width: 75%;
+display: flex;
+justify-content: center;
+}
+
+.Prism-text {
+  color: #d06dc5;
+  font-weight: bold;
+}
+
+.blue-text {
+  color: #70a6c4;
+  font-weight: bold;
+}
+
+.top-text {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.random-button {
+    width: 0px;
+    opacity: 0;
+}
+
+.info-stuff-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    text-align: right;
+    float: right;
+}
+
+
+.info-left-h2 {
+    padding-left: 500px;
+    float: left;
+}
+
+.info-left-p {
+    padding-left: 495px;
+    float: left;
+}
+
+.info-right-h2 {
+    padding-right: 500px;
+    float: right;
+}
+
+.info-right-p {
+    padding-right: 495px;
+    float: right;
+}
+
+
+.link {
+    color: #70a6c4;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #70a6c4;
+    margin: 20px 0;
+}
+
+.context { 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+
+.area{
+    background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f); 
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:350vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+.custom-cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        pointer-events: none; /* Allows interaction with elements behind the cursor */
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        opacity: 0.10;
+        transition: transform 0.1s ease, opacity 0.1s ease;
+        cursor: none;
+      }
+
+.button {
+    background-color: #70a6c4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 400px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    outline: #5b8093 solid 5px;
+}
+
+.button:hover {
+    background-color: #4e54c8;
+     outline: #5b8093 solid 0px;
+}
+
+
+.install-button {
+    background-color: #a97bbb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 400px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    outline: #483b5c solid 5px;
+}
+
+.install-button:hover {
+    background-color: #513062;
+     outline: #5b8093 solid 0px;
+}
+
+
+    #customMenu {
+      position: absolute;
+      display: none;
+      background-color: #62799f;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      z-index: 1000;
+    }
+    #customMenu div {
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #customMenu div:hover {
+      background-color: #2e3748;
+      border-radius: 10px;
+    }
+
+
+
+footer {
+    position: fixed;
+    padding-top: 135px;
+    text-align: center;
+    padding: 20px;
+    color: #9d9595;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-hr {
+    border: 0;
+    height: 3px;
+    background: #5d5959;
+    margin: 20px 0;
+}
+
+
+.footer-text {
+color: #ffffff;
+  opacity: 0.8;
+  float: left;
+  padding-left: 100px;
+}
+
+.footer-h1 {
+    font-weight: bold;
+    font-size: 55px;
+  float: left;
+    padding-left: 100px;
+}
+
+.footer-image {
+    float: right;
+    padding-right: 100px;
+    border-radius: 20px;
+}
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+</style>
+
+<div class="custom-cursor"></div>
+    <script>
+      const cursor = document.querySelector('.custom-cursor');
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+    </script>
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div>
+
+    <div class="context">
+        <br>
+        <br>
+        <br>
+        <center>
+            <h2>Credits:</h2>
+            <br>
+            <p class="top-text">All the people who have helped on Prism.</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="info-left-h2">Coders:</h2> 
+        <br>
+        <br>
+        <p class="info-left-p">Toastyzz0, sharkyy & Kisuu are all Coders for Prism. Toastyzz is the Main coder, Sprite Artist, and Website Coder. </p>
+        <br>
+        <p class="info-left-p">Sharkyy is a Side Coder, Main Sprite / Animator, Sprite Artist, and Ideas manager.</p>
+        <br>
+        <p class="info-left-p">Kisuu is a Side Coder & Multiplayer manager.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="info-left-h2">Voice Acters:</h2> 
+        <br>
+        <br>
+        <p class="info-left-p">The Curent Voice Acters for Prism Story mode is: Emaunel, Jr, & Capycake. </p>
+    </div>
+</body>
+</html>

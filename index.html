@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/accets/images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/17/Stats.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Prism | A Random 2D Game.</title>
+    <meta name="description" content="Play a Random 2D game that was made in a Mod of Scratch.">
+    <meta property="og:title" content="Prism">
+    <meta property="og:description" content="Play a Random 2D game that was made in a Mod of Scratch.">
+    <meta property="og:image" content="./accets/images/Prism.png">
+    <meta property="og:type" content="website">
 </head>
 <body>
 <style>
@@ -61,7 +66,7 @@ justify-content: center;
 }
 
 .Prism-text {
-  color: #cd32bb;
+  color: #d06dc5;
   font-weight: bold;
 }
 
@@ -138,7 +143,7 @@ hr {
     background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f); 
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
-    height:300vh;
+    height:350vh;
     
    
 }
@@ -299,6 +304,68 @@ hr {
 }
 
 
+    #customMenu {
+      position: absolute;
+      display: none;
+      background-color: #62799f;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      z-index: 1000;
+    }
+    #customMenu div {
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #customMenu div:hover {
+      background-color: #2e3748;
+      border-radius: 10px;
+    }
+
+
+
+footer {
+    position: fixed;
+    padding-top: 135px;
+    text-align: center;
+    padding: 20px;
+    color: #9d9595;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-hr {
+    border: 0;
+    height: 3px;
+    background: #5d5959;
+    margin: 20px 0;
+}
+
+
+.footer-text {
+color: #ffffff;
+  opacity: 0.8;
+  float: left;
+  padding-left: 100px;
+}
+
+.footer-h1 {
+    font-weight: bold;
+    font-size: 55px;
+  float: left;
+    padding-left: 100px;
+}
+
+.footer-image {
+    float: right;
+    padding-right: 100px;
+    border-radius: 20px;
+}
+
+
 @keyframes animate {
 
     0%{
@@ -314,6 +381,8 @@ hr {
     }
 
 }
+
+
 
 </style>
 
@@ -341,7 +410,17 @@ hr {
                     <li></li>
             </ul>
     </div>
-<div class="context">
+
+    <div class="context">
+          <div id="customMenu">
+            <center>
+            <p>Right Click Menu</p>
+            <br>
+            </center>
+    <div id="item1">Home Page</div>
+    <div id="item2">View Source Code</div>
+    <div id="item3">Go to Profile</div>
+  </div>
 <br>
 <br>
 <center>
@@ -356,8 +435,8 @@ hr {
 </div>
 
 <div class="info-stuff-right">
-<p>Website Verson: 1.0</p>
-<p>Game Verson: Not Out Yet.</p>
+<p>Website Verson: 1.1</p>
+<p>Game Verson: Beta 1.0.</p>
 
 </div>
 </center>
@@ -385,14 +464,19 @@ hr {
 <h2 class="info-left-h2">Who are <span class="blue-text">The Crew</span> For "<span class="Prism-text">Prism</span>"?</h2> 
  <br>
  <br>
-<p class="info-left-p">The Crew for The Prism Story Mode is: Main Charcter: Not Found, Fighting sounds: Miku (Jr), Hit Sounds: Emaunel,</p>
-<p class="info-left-p">SoundTrack: Not Found, Main Coder, Sprite Artist, Story: Toastyzz0, Side Coder, Sprite Artist: sharkyydev</p>
+<p class="info-left-p">The Coding Group for Prism is: <a class="link" href="https://github.com/Toastyzz0/">Toastyzz0</a> as the Main Dev / Sprite Artist, <a class="link" href="https://youtube.com/@sharkyydev/">Sharkyy</a> as another Sprite Artist / Dev & <a class="link" href="https://www.guilded.gg/u/kisuu">Kisuu</a>,</p>
+<p class="info-left-p">the Multiplayer Manager, Dev, Some Soundtrack. (If you wanna see everyone, click <a class="link" href="./credits.html">Here</a>.)</p>
 <br>
 <br>
 <br>
 <br>
 <br>
+<center>
 <a class="link" href="https://github.com/Toastyzz0/Prism/""><button class="button">Github Repo</button></a>
+<br>
+<br>
+<a class="link" href="./login.html""><button class="button">Login Page</button></a>
+</center>
 <br>
 <br>
 <br>
@@ -436,23 +520,48 @@ hr {
 <p class="info-left-p"><a class="link" href="https://github.com/Toastyzz0/Prism/">https://github.com/Toastyzz0/Prism/</a>
 <br>
 <br>
+<br>
 <h2 class="info-left-h2">Support Discord Server:</h2>
 <p class="info-left-p"><a class="link" href="https://discord.gg/Qxm5Uy89Zz">https://discord.gg/Qxm5Uy89Zz</a>
 <br>
 <br>
 <br>
-<br>
-<h2></h2>
-<br>
-<p class="top-text"></p>
-<br>
-<br>
-<br>
-<br>
-<br>
+<h2 class="info-left-h2">The Main Menu Music:</h2>
+<p class="info-left-p">
+<audio controls>
+<source src="./accets/soundtrack/Math - Main Menu Music.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+</p>
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>Pages:</h2>
+<br>
+<p class="top-text">All the pages on this Website.</p>
+<br>
+<br>
+<br>
+<h2 class="info-left-h2">The Home page:</h2>
+<p class="info-left-p"><a class="link" href="./index.html">https://toastyzz0.github.io/Prism/</a></p>
+<br>
+<br>
+<br>
+<h2 class="info-left-h2">The Install Page:</h2>
+<p class="info-left-p"><a class="link" href="./install.html">https://toastyzz0.github.io/Prism/install.html</a></p>
+<br>
+<br>
+<br>
+<p class="top-text">Look at more pages <a class="link" href="./pages.html">Here</a>.</p>
 <br>
 <br>
 <br>
@@ -465,8 +574,56 @@ hr {
 <br>
 <br>
 <a href="./install.html"><button class="install-button">Install Prism</button></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <center>
+        <hr class="footer-hr">
+        <h1 class="footer-h1"><span class="Prism-text">Prism</span></h1>
+        <br>
+        <br>
+        <br>
+        <br>
+    <p class="footer-text">Made by <a class="link" href="https://youtube.com/@Toastyzz0">Toastyzz0</a></p>
+        <br>
+        <br>
+    <p class="footer-text">© 2025 Toastyzz0. All rights reserved.</p>
+    <br>
+    <br>
+      <p class="footer-text">Made with ❤️ by Toastyzz0, sharkyydev, Kisuu & Async Studios.</p>
+      <br>
+      <br>
+      <br>
+      <a class="footer-text" href="https://x.com/@Toastyzz0"><img src="/accets/images/X_logo_2023_(white).png" alt="X / Twitter Logo" style="width: 30px; height: 30px;"></a>
+      <a class="footer-text" href="https://github.com/Toastyzz0/"><img src="/accets/images/github-logo-white.png" alt="Github Logo" style="width: 30px; height: 30px;"></a>
+      <a class="footer-text" href="https://discord.gg/Qxm5Uy89Zz"><img src="/accets/images/discord-white-icon.webp" alt="Discord Logo" style="width: 30px; height: 30px;"></a>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+      <hr class="footer-hr">
+    </center>
+</footer>
 </center>   
 </div>
-<script src="./tip.js"></script>
+<script src="/accets/JS/tip.js"></script>
+<script src="/accets/JS/rcm.js"></script>
 </body>
 </html>
